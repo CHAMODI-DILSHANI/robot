@@ -37,3 +37,56 @@ The trained PPO agent consistently outperforms a random policy:
 
 ## 📂 Repository Structure  
 
+├── train_cartpole.py # Train PPO agent
+
+├── record_random.py # Record random policy
+
+├── record_cartpole.py # Record trained policy
+
+├── stitch_side_by_side.py # Combine random vs trained videos
+
+├── plot_rewards.py # Plot performance comparison
+
+├── ppo_cartpole.zip # Saved PPO model
+
+├── *.mp4 # Generated demo videos
+
+└── reward_comparison.png # Performance graph
+
+
+---
+
+## 🚀 Getting Started  
+
+### 1. Install dependencies  
+
+```bash
+pip install -r requirements.txt
+```
+Or manually:
+
+```bash
+pip install stable-baselines3 gymnasium imageio moviepy matplotlib
+```
+2. Train an agent
+```bash
+python train_cartpole.py
+```
+3. Record random vs trained policies
+```bash
+python record_random.py
+python record_cartpole.py
+```
+4. Create side-by-side comparison video
+```bash
+python stitch_side_by_side.py
+```
+
+💡 Next Steps
+- Extend to MuJoCo Ant for 3D locomotion
+- Add evaluation metrics + plots
+- Explore more advanced reward shaping
+
+📌 Author
+
+👩‍💻 Built by Chamodi Dilshani
